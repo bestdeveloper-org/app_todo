@@ -9,6 +9,8 @@ import { CounterWithServiceComponent } from './ui/counter-with-service/counter-w
 import {CounterService} from './services/counter/counter.service';
 import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
+import { PasswordResetComponent } from './user/password-reset/password-reset.component';
+import { AppRoutingModule } from './routing/app-routing.module';
 
 
 @NgModule({
@@ -18,11 +20,13 @@ import { FooterComponent } from './ui/footer/footer.component';
     CounterWithServiceComponent,
 
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PasswordResetComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [CounterService],
   bootstrap: [AppComponent]
