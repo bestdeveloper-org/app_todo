@@ -11,6 +11,7 @@ import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
 import { PasswordResetComponent } from './ui/user/password-reset/password-reset.component';
 import { AppRoutingModule } from './routing/app-routing.module';
+import { ValidationExampleComponent } from './ui/validation-example/validation-example.component';
 
 
 @NgModule({
@@ -21,7 +22,11 @@ import { AppRoutingModule } from './routing/app-routing.module';
 
     HeaderComponent,
     FooterComponent,
+<<<<<<< HEAD
     PasswordResetComponent
+=======
+    ValidationExampleComponent
+>>>>>>> validation-example
   ],
   imports: [
     BrowserModule,
