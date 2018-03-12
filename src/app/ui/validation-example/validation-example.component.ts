@@ -15,9 +15,7 @@ export class ValidationExampleComponent implements OnInit {
   ngOnInit() {
   }
 
-  // powers = ['Really Smart', 'Super Flexible', 'Weather Changer'];
-
-  passwordReset: any = {
+  passRes: any = {
     email:"",
     newPassword:"",
     confirmPassword:""

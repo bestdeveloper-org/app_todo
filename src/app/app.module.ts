@@ -18,7 +18,6 @@ import { ValidationExampleComponent } from './ui/validation-example/validation-e
     AppComponent,
     CounterComponent,
     CounterWithServiceComponent,
-
     HeaderComponent,
     FooterComponent,
     ValidationExampleComponent
