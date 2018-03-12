@@ -22,11 +22,8 @@ import { ValidationExampleComponent } from './ui/validation-example/validation-e
 
     HeaderComponent,
     FooterComponent,
-<<<<<<< HEAD
-    PasswordResetComponent
-=======
+    PasswordResetComponent,
     ValidationExampleComponent
->>>>>>> validation-example
   ],
   imports: [
     BrowserModule,

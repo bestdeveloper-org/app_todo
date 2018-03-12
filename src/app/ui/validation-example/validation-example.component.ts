@@ -8,21 +8,20 @@ import {NgForm} from "@angular/forms";
 })
 export class ValidationExampleComponent implements OnInit {
 
-  @ViewChild('heroForm') currentForm: NgForm;
+  @ViewChild('passwordResetForm') currentForm: NgForm;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  powers = ['Really Smart', 'Super Flexible', 'Weather Changer'];
+  // powers = ['Really Smart', 'Super Flexible', 'Weather Changer'];
 
-  hero: any = {
-    id:1,
-    name:"",
-    power:"",
-    alterEgo:""
-  }
+  passwordReset: any = {
+    email:"",
+    newPassword:"",
+    confirmPassword:""
+  };
 
   validateInput(ctrlName){
     this.currentForm.controls[ctrlName].markAsDirty();
@@ -33,7 +32,7 @@ export class ValidationExampleComponent implements OnInit {
     debugger;
     let isFormValid = this.currentForm.valid;
 
-    isFormValid = this.validateInput("name");
+    isFormValid = this.validateInput("email");
     if(!isFormValid){
       return;
     }

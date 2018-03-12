@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-password-reset',
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PasswordResetComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('resetForm') currentForm: NgForm;
+
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  validateInput(ctrlEmail) {
+    this.currentForm.controls[ctrlEmail].markAsDirty();
+    return this.currentForm.controls[ctrlEmail].valid;
+  }
+
+  onSubmit() {
+    let isFormValid = this.currentForm.valid;
+
+    isFormValid = this.validateInput("email");
+    if (!isFormValid) {
+      return
+    }
+
   }
 
 }
