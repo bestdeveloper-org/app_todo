@@ -1,7 +1,7 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ValidationExampleComponent } from '../ui/validation-example/validation-example.component';
+import { ValidationExampleComponent } from '../ui/user/validation-example/validation-example.component';
 
 
 const routes: Routes = [
