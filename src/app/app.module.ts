@@ -9,6 +9,7 @@ import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
 import { AppRoutingModule } from './routing/app-routing.module';
 import { ValidationExampleComponent } from './ui/user/validation-example/validation-example.component';
+import { SuccessfulResetComponent } from './ui/user/successful-reset/successful-reset.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ValidationExampleComponent } from './ui/user/validation-example/validat
     CounterWithServiceComponent,
     HeaderComponent,
     FooterComponent,
-    ValidationExampleComponent
+    ValidationExampleComponent,
+    SuccessfulResetComponent
   ],
   imports: [
     BrowserModule,
