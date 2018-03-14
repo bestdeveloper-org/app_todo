@@ -10,7 +10,8 @@ import {CounterService} from './services/counter/counter.service';
 import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
 import { ChangePasswordComponent } from './ui/change-password/change-password/change-password.component';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
+import {LoginComponent} from './ui/user/login/login.component';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { AppRoutingModule } from './/app-routing.module';
 
     HeaderComponent,
     FooterComponent,
-    ChangePasswordComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
