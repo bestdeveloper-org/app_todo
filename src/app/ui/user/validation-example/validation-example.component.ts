@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {NgForm} from "@angular/forms";
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-validation-example',
@@ -10,7 +11,7 @@ export class ValidationExampleComponent implements OnInit {
 
   @ViewChild('passwordResetForm') currentForm: NgForm;
 
-  constructor() { }
+  constructor( private router: Router ) {  }
 
   ngOnInit() {
   }
@@ -34,6 +35,8 @@ export class ValidationExampleComponent implements OnInit {
     if(!isFormValid){
       return;
     }
+
+    this.router.navigate(['/successful-reset']);
 
   }
 
