@@ -7,7 +7,7 @@ import { CounterWithServiceComponent } from './ui/counter-with-service/counter-w
 import { CounterService } from './services/counter/counter.service';
 import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
-import { ChangePasswordComponent } from './ui/change-password/change-password/change-password.component';
+import { ChangePasswordComponent } from './ui/user/change-password/change-password.component';
 import {LoginComponent} from './ui/user/login/login.component';
 import { AppRoutingModule } from './routing/app-routing.module';
 import { ValidationExampleComponent } from './ui/user/validation-example/validation-example.component';
@@ -22,7 +22,8 @@ import { SuccessfulResetComponent } from './ui/user/successful-reset/successful-
     FooterComponent,
     SuccessfulResetComponent,
     ValidationExampleComponent,
-    LoginComponent
+    LoginComponent,
+    ChangePasswordComponent
   ],
   imports: [
     BrowserModule,
