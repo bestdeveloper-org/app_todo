@@ -12,6 +12,15 @@ import {LoginComponent} from './ui/user/login/login.component';
 import { AppRoutingModule } from './routing/app-routing.module';
 import { ValidationExampleComponent } from './ui/user/validation-example/validation-example.component';
 import { SuccessfulResetComponent } from './ui/user/successful-reset/successful-reset.component';
+import {FileComponentComponent} from "./ui/components/file-component/file-component.component";
+import {CreateUserComponent} from "./ui/user/create-user/create-user.component";
+import {HttpWrapperService} from "./services/http/httpService";
+import {PubSubService} from "./services/pubsub/pubsub";
+import { LocalStorageModule } from 'angular-2-local-storage';
+import {HttpModule} from "@angular/http";
+import { TextMaskModule } from 'angular2-text-mask';
+import { Angular2SocialLoginModule } from 'angular2-social-login';
+
 
 @NgModule({
   declarations: [
@@ -23,14 +32,23 @@ import { SuccessfulResetComponent } from './ui/user/successful-reset/successful-
     SuccessfulResetComponent,
     ValidationExampleComponent,
     LoginComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    FileComponentComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LocalStorageModule.withConfig({
+      prefix: 'my-app',
+      storageType: 'localStorage'
+    }),
+    HttpModule,
+    TextMaskModule,
+    Angular2SocialLoginModule
   ],
-  providers: [CounterService],
+  providers: [CounterService,HttpWrapperService,PubSubService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

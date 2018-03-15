@@ -5,6 +5,7 @@ import { ValidationExampleComponent } from '../ui/user/validation-example/valida
 import { SuccessfulResetComponent } from '../ui/user/successful-reset/successful-reset.component';
 import {LoginComponent} from "../ui/user/login/login.component";
 import {ChangePasswordComponent} from "../ui/user/change-password/change-password.component";
+import {CreateUserComponent} from "../ui/user/create-user/create-user.component";
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'successful-reset', component: SuccessfulResetComponent },
   { path: 'login', component: LoginComponent },
   { path: 'validationexample', component: ValidationExampleComponent },
-  { path: 'changePassword', component: ChangePasswordComponent }
+  { path: 'changePassword', component: ChangePasswordComponent },
+  { path: 'createUser', component: CreateUserComponent }
 ];
 
 @NgModule({
