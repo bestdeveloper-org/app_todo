@@ -20,6 +20,7 @@ import { LocalStorageModule } from 'angular-2-local-storage';
 import {HttpModule} from "@angular/http";
 import { TextMaskModule } from 'angular2-text-mask';
 import { Angular2SocialLoginModule } from 'angular2-social-login';
+import {TestComponentComponent} from "./ui/header/test-component/test-component.component";
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { Angular2SocialLoginModule } from 'angular2-social-login';
     LoginComponent,
     ChangePasswordComponent,
     FileComponentComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    TestComponentComponent
   ],
   imports: [
     BrowserModule,
