@@ -20,7 +20,7 @@ import { LoginComponent } from './ui/user/login/login.component';
 
     HeaderComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

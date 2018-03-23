@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background: url("https://previews.123rf.com/images/ivelinradkov/ivelinradkov1405/ivelinradkov140500009/28489392-hand-writing-so-many-things-in-to-do-list-with-red-marker-isolated-on-white-.jpg");
+    background-position: top right;
+    background-size: 85%;
+    font-family: 'Lato', sans-serif;
+}
